@@ -1,7 +1,7 @@
 ﻿# Travel-Agency
  # Travel Agency Website
 
-A modern and responsive travel agency website built with Tailwind CSS to showcase travel destinations, tour packages, and tourism services.
+A modern and responsive travel agency website built with Tailwind CSS,HTML , JS with a modem animation to showcase travel destinations, tour packages, and tourism services.
 
 ## Project Overview
 
@@ -10,6 +10,7 @@ This project is a travel agency website designed to provide users with an easy w
 ## Features
 
 * Modern and responsive design
+* Modern Animations
 * Travel destination showcase
 * Tour packages section
 * User-friendly navigation
@@ -45,3 +46,4 @@ travel-agency/
 ## Author
 
 Arzoo Muhammadi
+
