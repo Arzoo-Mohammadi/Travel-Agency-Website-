@@ -27,16 +27,22 @@ This project is a travel agency website designed to provide users with an easy w
 ```
 travel-agency/
 │
-├── index.html
-├── assets/
-│   ├── images/
-│   └── icons/
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
+├── index.html    
+├── node_modules/    
+├── src/               
+│   ├── html/            
+│   ├── input.css        
+│   ├── output.css       
+│   └── images/          
+├── package.json         
+├── package-lock.json   
+└── README.md 
 ```
+## Preview of Project
 
+
+
+![Travel Agency Home Page](src/images/preview.png)
 ## How to Run the Project
 
 1. Clone the repository
@@ -46,4 +52,5 @@ travel-agency/
 ## Author
 
 Arzoo Muhammadi
+
 
