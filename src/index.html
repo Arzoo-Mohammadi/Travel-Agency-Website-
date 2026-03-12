@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="images/travel-svgrepo-com.svg" />
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Navbar -->
+    <!--====================================================== HOME Section -===============================================================================-->
+    <section
+      class="h-screen bg-cover bg-center relative"
+      style="
+        background-image: url(&quot;./images/29adb3d01648148b2c4b2326db4e7ab8\ \(1\).jpg&quot;);
+      "
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/60"></div>
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md"
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center"
+        >
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <!-- Icon -->
+            <div class="w-6 h-6 flex items-center justify-center">
+              <svg
+                fill="#3B82F6"
+                height="200px"
+                width="200px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 122.88 122.88"
+                xml:space="preserve"
+                stroke="#3B82F6"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M16.63,105.75c0.01-4.03,2.3-7.97,6.03-12.38L1.09,79.73c-1.36-0.59-1.33-1.42-0.54-2.4l4.57-3.9 c0.83-0.51,1.71-0.73,2.66-0.47l26.62,4.5l22.18-24.02L4.8,18.41c-1.31-0.77-1.42-1.64-0.07-2.65l7.47-5.96l67.5,18.97L99.64,7.45 c6.69-5.79,13.19-8.38,18.18-7.15c2.75,0.68,3.72,1.5,4.57,4.08c1.65,5.06-0.91,11.86-6.96,18.86L94.11,43.18l18.97,67.5 l-5.96,7.47c-1.01,1.34-1.88,1.23-2.65-0.07L69.43,66.31L45.41,88.48l4.5,26.62c0.26,0.94,0.05,1.82-0.47,2.66l-3.9,4.57 c-0.97,0.79-1.81,0.82-2.4-0.54l-13.64-21.57c-4.43,3.74-8.37,6.03-12.42,6.03C16.71,106.24,16.63,106.11,16.63,105.75 L16.63,105.75z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <svg
+                class="w-full h-full"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <!-- SVG PATH -->
+              </svg>
+            </div>
+
+            <!-- Text -->
+            <h1 class="text-xl md:text-2xl font-bold text-blue-500">
+              SkyRoute
+            </h1>
+          </div>
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex gap-8 text-w font-medium">
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#services">Services</a>
+            </li>
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#banner">Packages</a>
+            </li>
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#trip">Trips</a>
+            </li>
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#testimonial">Testimonials</a>
+            </li>
+
+            <li class="hover:text-blue-500 cursor-pointer">
+              <a href="#footer">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+
+          <button
+            class="hidden md:block bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition"
+          >
+            Book Now
+          </button>
+
+          <!-- Mobile Icon -->
+          <div
+            id="menu-btn"
+            class="md:hidden text-3xl cursor-pointer transition duration-300"
+          >
+            ☰
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="max-h-0 opacity-0 -translate-y-5 overflow-hidden transition-all duration-700 ease-in-out md:hidden bg-white/80 backdrop-blur-md"
+        >
+          <div
+            class="flex flex-col items-center gap-6 py-6 text-gray-700 font-medium"
+          >
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#banner">Packages</a>
+            <a href="#trip">Trips</a>
+            <a href="#testimonial">Testimonials</a>
+            <a href="#footer">Contact</a>
+            <button class="bg-blue-500 text-white px-5 py-2 rounded-lg">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Content -->
+      <div
+        class="relative z-10 text-white text-center pt-40"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        style="padding-top: 290px"
+      >
+        <h1 class="text-5xl font-bold mb-4">Explore The World With Us</h1>
+        <p class="mb-6">
+          Discover amazing places SkyRoute offers unforgettable travel
+          experiences with the best prices and premium services.
+        </p>
+        <button
+          class="bg-blue-500 px-6 py-3 rounded-lg transition duration-300 hover:scale-110"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <!--====================================================== services Section -===============================================================================-->
+    <section id="services" class="py-20 px-6 bg-white">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-5 items-center">
+        <!-- Image -->
+        <div>
+          <img
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            src="./images/imgg.jpg "
+            class="w-full max-w-md ml-10 rounded-2xl shadow-lg"
+          />
+        </div>
+
+        <!-- Content -->
+        <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+          <h2 class="text-3xl font-bold mb-4 text-blue-500">
+            Why Choose SkyRoute?
+          </h2>
+
+          <p class="text-black mb-6">
+            We make your travel experience smooth, safe, and unforgettable.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <span
+                class="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full"
+              >
+                ✓
+              </span>
+              <p>Best Destinations</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span
+                class="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full"
+              >
+                ✓
+              </span>
+              <p>Affordable Prices</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span
+                class="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full"
+              >
+                ✓
+              </span>
+              <p>24/7 Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================================================== Why Choose Us Section -===============================================================================-->
+    <section class="py-20 bg-gray-50 text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Title -->
+        <h2
+          class="text-3xl font-bold text-blue-500 mb-4"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          WHY WE ARE THE BEST
+        </h2>
+
+        <p
+          class="text-black mb-12 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          We combine creativity, strategy, and technology to build powerful
+          digital experiences that elevate your brand to the next level.
+        </p>
+
+        <!-- Features -->
+        <div class="grid md:grid-cols-4 gap-10">
+          <!-- Item -->
+          <div class="space-y-4">
+            <div class="text-4xl">
+              <img
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+                src="./images/travel-svgrepo-com.svg "
+                class="w-12 h-12 mx-auto transition duration-300 hover:scale-110"
+              />
+            </div>
+            <h3
+              class="font-semibold text-lg"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Amazing Travel
+            </h3>
+            <p
+              class="text-gray-500 text-sm"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Best experience for your journey
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="text-4xl">
+              <img
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+                src="./images/earth-14-svgrepo-com.svg "
+                class="w-12 h-12 mx-auto transition duration-300 hover:scale-110"
+              />
+            </div>
+            <h3
+              class="font-semibold text-lg"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Discover
+            </h3>
+            <p
+              class="text-black text-sm"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Explore new destinations
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="text-4xl">
+              <img
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+                src="./images/flag-2-svgrepo-com.svg "
+                class="w-12 h-12 mx-auto transition duration-300 hover:scale-110"
+              />
+            </div>
+            <h3
+              class="font-semibold text-lg"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Book Your Trip
+            </h3>
+            <p
+              class="text-black text-sm"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Easy and fast booking
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="text-4xl">
+              <img
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+                src="./images/chat-dots-svgrepo-com.svg"
+                class="w-12 h-12 mx-auto transition duration-300 hover:scale-110"
+              />
+            </div>
+            <h3
+              class="font-semibold text-lg"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Nice Support
+            </h3>
+            <p
+              class="text-black text-sm"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              24/7 support for you
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================================================== banner Section -===============================================================================-->
+    <section
+      id="banner"
+      class="relative py-20 bg-cover bg-center"
+      style="background-image: url(&quot;./images/banner.jpg&quot;)"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-blue-500/70"></div>
+
+      <div
+        class="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-white"
+      >
+        <!-- Text -->
+        <div
+          class="max-w-xl"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            SkyRoute Vacation Packages
+          </h2>
+
+          <p class="mb-4 text-gray-200">
+            Discover amazing places with the best prices and unforgettable
+            experience.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-gray-300 mb-4">
+            <span>📍 Georgia</span>
+            <span>⏳ 5 Days</span>
+            <span>⭐ 4.8 Rating</span>
+          </div>
+
+          <p class="text-lg font-semibold">
+            From Georgia - <span class="text-yellow-400">$159.00</span> / person
+          </p>
+        </div>
+
+        <!-- Button -->
+        <div
+          class="mt-6 md:mt-0"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <button
+            class="bg-white text-blue-500 px-6 py-3 rounded-lg hover:bg-yellow-400 transition"
+          >
+            DETAILS
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--====================================================== trips Section -===============================================================================-->
+    <section id="trip" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          class="text-3xl font-bold text-gray-800 mb-4"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          POPULAR TRIPS
+        </h2>
+
+        <p
+          class="text-gray-500 mb-12 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          Explore our most popular trip destinations with premium comfort,
+          breathtaking views, and unforgettable journeys.
+        </p>
+
+        <!-- Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8"
+        >
+          <!-- Repeat card template -->
+
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
+            <!-- Image Wrapper -->
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/london.jpg"
+                alt="London"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">London</h3>
+              <p class="text-sm text-gray-500 mb-3">7 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/turkey.jpg"
+                alt="Turkey"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">Turkey</h3>
+              <p class="text-sm text-gray-500 mb-3">5 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/dubai.jpg"
+                alt="Dubai"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">Dubai</h3>
+              <p class="text-sm text-gray-500 mb-3">10 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+          >
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/korea.jpg"
+                alt="Korea"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">Korea</h3>
+              <p class="text-sm text-gray-500 mb-3">2 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="1100"
+            data-aos-duration="1000"
+          >
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/singa.jpg"
+                alt="Singapore"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">Singapore</h3>
+              <p class="text-sm text-gray-500 mb-3">9 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-white shadow-lg rounded-xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+          >
+            <div class="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="images/paris.jpg"
+                alt="Paris"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 text-left">
+              <h3 class="font-semibold text-lg mb-1">Paris</h3>
+              <p class="text-sm text-gray-500 mb-3">7 Night Tour</p>
+              <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+              <button
+                class="w-full md:w-20 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full text-sm font-semibold"
+              >
+                SEE ALL
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--====================================================== happy customers Section -===============================================================================-->
+
+    <section id="testimonial" class="bg-blue-500 text-white py-16">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Image -->
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+          <img
+            src="images/cc037449fff223737ad5663c4f8cf878.png"
+            alt="happy customers"
+            class="rounded-xl w-full max-w-md ml-10"
+          />
+        </div>
+
+        <!-- Content -->
+        <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+          <h2 class="text-3xl font-bold mb-4">HAPPY CUSTOMERS</h2>
+          <p class="text-gray-200 mb-6">
+            We have helped hundreds of travelers enjoy seamless and
+            unforgettable journeys with our professional services.
+          </p>
+
+          <!-- Progress Bars -->
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Flights</span>
+                <span>94%</span>
+              </div>
+              <div class="w-full bg-gray-500 h-2 rounded">
+                <div class="bg-white h-2 rounded w-[94%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Hotels</span>
+                <span>86%</span>
+              </div>
+              <div class="w-full bg-gray-500 h-2 rounded">
+                <div class="bg-white h-2 rounded w-[86%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Cars</span>
+                <span>48%</span>
+              </div>
+              <div class="w-full bg-gray-500 h-2 rounded">
+                <div class="bg-white h-2 rounded w-[48%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Cruises</span>
+                <span>51%</span>
+              </div>
+              <div class="w-full bg-gray-500 h-2 rounded">
+                <div class="bg-white h-2 rounded w-[51%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====================================================== footer Section -===============================================================================-->
+
+    <footer id="footer" class="bg-gray-900 text-gray-300 pt-12">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <!-- About -->
+        <div>
+          <h3 class="text-white text-xl font-bold mb-4">SkyRoute</h3>
+          <p class="text-sm">
+            We provide the best travel experiences with amazing destinations and
+            premium services.
+          </p>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Travel Specialists</h4>
+          <ul class="space-y-2 text-sm">
+            <li>First Class Flights</li>
+            <li>Accessible Travel</li>
+            <li>Amazing Cruises</li>
+          </ul>
+        </div>
+
+        <!-- Twitter -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Latest Updates</h4>
+          <p class="text-sm mb-2">
+            Stay updated with our latest travel offers and news.
+          </p>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full p-2 mb-3 rounded bg-gray-800 border border-gray-700 text-sm"
+          />
+          <button class="bg-blue-500 px-4 py-2 text-white text-sm rounded">
+            SUBMIT
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="text-center text-sm text-gray-500 mt-10 py-4 border-t border-gray-800"
+      >
+        © 2026 SkyRoute. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        const isOpen = menu.classList.contains("max-h-96");
+
+        if (isOpen) {
+          menu.classList.remove("max-h-96", "opacity-100", "translate-y-0");
+          menu.classList.add("max-h-0", "opacity-0", "-translate-y-5");
+          btn.textContent = "☰";
+        } else {
+          menu.classList.remove("max-h-0", "opacity-0", "-translate-y-5");
+          menu.classList.add("max-h-96", "opacity-100", "translate-y-0");
+          btn.textContent = "✕";
+        }
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
