@@ -41,8 +41,7 @@ travel-agency/
 ## Preview of Project
 
 
-
-![Travel Agency Home Page](src/images/preview.png)
+(src/images/preview.png)
 ## How to Run the Project
 
 1. Clone the repository
@@ -52,5 +51,6 @@ travel-agency/
 ## Author
 
 Arzoo Muhammadi
+
 
 
